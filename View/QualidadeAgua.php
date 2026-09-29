@@ -20,8 +20,7 @@ class QualidadeAgua
     private const DUREZA_MAX = 500.0;      // mg/L
 
     /**
-     * ABORDAGEM 1 — pH como valor de entrada direta (dataset real).
-     * Apenas classifica o valor recebido dentro da faixa de potabilidade.
+     * pH como valor de entrada direta (dataset real).
      */
     public function classificarPH(float $ph): string
     {
@@ -31,7 +30,7 @@ class QualidadeAgua
     }
 
     /**
-     * ABORDAGEM 2 — pH calculado a partir da concentração de íons H+.
+     * pH calculado a partir da concentração de íons H+.
      * pH = -log10([H+])
      *
      * @throws \InvalidArgumentException se a concentração for <= 0
@@ -92,7 +91,7 @@ class QualidadeAgua
             'turbidez' => $this->classificarTurbidez($turbidez),
             'cloroResidual' => $this->classificarCloroResidual($cloroResidual),
             'dureza' => $this->classificarDureza($dureza),
-            'temperatura' => $temperatura, // informativo, sem padrão rígido
+            'temperatura' => $temperatura, 
         ];
 
         $resultado['potavel'] = !in_array('Fora do padrão', $resultado, true);
