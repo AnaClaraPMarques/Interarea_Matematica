@@ -46,11 +46,13 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    padding: 20px;
 }
 
 .matriz,
 .matriz input {
     text-align: center;
+    padding: 20px;
 }
 
 input {

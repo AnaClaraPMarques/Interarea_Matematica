@@ -12,6 +12,35 @@ class AlgebraLinearController
     {
     }
 
+
+    public function calcularDeterminante(array $m): array
+{
+    if (count($m) !== 3) {
+        return ["determinante" => null, "erro" => "A matriz deve ser 3x3."];
+    }
+
+    foreach ($m as $linha) {
+        if (!is_array($linha) || count($linha) !== 3) {
+            return ["determinante" => null, "erro" => "A matriz deve ser 3x3."];
+        }
+        foreach ($linha as $valor) {
+            if (!is_numeric($valor)) {
+                return ["determinante" => null, "erro" => "Preencha todos os campos com números."];
+            }
+        }
+    }
+
+    // diagonais principais (+) e secundárias (-)
+    $det =
+        ($m[0][0] * $m[1][1] * $m[2][2]) +
+        ($m[0][1] * $m[1][2] * $m[2][0]) +
+        ($m[0][2] * $m[1][0] * $m[2][1]) -
+        ($m[0][2] * $m[1][1] * $m[2][0]) -
+        ($m[0][0] * $m[1][2] * $m[2][1]) -
+        ($m[0][1] * $m[1][0] * $m[2][2]);
+
+    return ["determinante" => $det, "erro" => null];
+}
     
     public function solveSistema(array $matriz, array $termos): array
     {
