@@ -1,76 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monitoramento da Água</title>
-    <link rel="stylesheet" href="templates/css/style.css">
-
+    <title>Álgebra Linear</title>
+    <link rel="stylesheet" href="templates/css/global.css">
 </head>
 
 <body>
 
-    <div class="principal">
+<header>
+    <h1>Álgebra Linear</h1>
+</header>
 
-        <!-- Calculadora de PH -->
-        <div class="card">
+<main>
 
-            <h1>Calculadora de pH</h1>
+    <section id="matrizes">
+        <h2>Operações com Matrizes</h2>
 
-            <p>Digite a concentração de H⁺:</p>
+        <div class="matrizes">
+            <div>
+                <h3>Matriz A</h3>
+                <input><input><br>
+                <input><input>
+            </div>
 
-            <input type="number" id="h" placeholder="Ex: 0.001">
+            <select>
+                <option>+</option>
+                <option>-</option>
+                <option>×</option>
+            </select>
 
-            <button onclick="calcularPH()">Calcular pH</button>
-
-            <h2 id="resultadoPH"></h2>
-
+            <div>
+                <h3>Matriz B</h3>
+                <input><input><br>
+                <input><input>
+            </div>
         </div>
 
+        <button>Calcular</button>
+
+        <div class="resultado">
+            Resultado: [ 0  0 ] [ 0  0 ]
+        </div>
+    </section>
 
 
-        <!-- Qualidade da Água -->
-        <div class="card">
+    <section>
+        <h2>Determinante</h2>
 
-            <h1>Qualidade da Água</h1>
-
-            <p>Digite o pH da água:</p>
-
-            <input type="number" id="phAgua" placeholder="Ex: 7">
-
-            <p>Turbidez:</p>
-
-            <input type="number" id="turbidez" placeholder="Ex: 5">
-
-            <p>Cloro Residual:</p>
-
-            <input type="number" id="cloroResidual" placeholder="Ex: 2">
-
-
-            <p>Dureza:</p>
-
-            <input type="number" id="dureza" placeholder="Ex: 500">
-
-            <p>Temperatura:</p>
-
-            <input type="number" id="cloroResidual" placeholder="Ex: 35°">
-
-
-
-            <button onclick="avaliarAgua()">Avaliar</button>
-
-            <h2 id="resultadoAgua"></h2>
-
+        <div class="matriz">
+            <input><input><input>
+            <input><input><input>
+            <input><input><input>
         </div>
 
+        <button>Calcular determinante</button>
 
-    </div>
-
-
-    <script src="templates/js/script.js"></script>
-
-</body>
+        <p>Determinante: <strong>0</strong></p>
+    </section>
 
 
-</html>
+    <section id="sistema">
+        <h2>Sistema Linear</h2>
+
+        <div class="sistema">
+            <p>
+                <input> x +
+                <input> y =
