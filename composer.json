@@ -4,10 +4,18 @@
     "type": "project",
     "authors": [
         {
-            "name": "AnaClaraPMarques"
+            "name": "AnaClaraPMarques",
+            "name": "AnnaClaraVieira"
         }
     ],
     "require": {
         "vlucas/phpdotenv": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Controller\\": "Controller/",
+            "Model\\": "Model/",
+            "View\\": "View/"
+        }
     }
 }
