@@ -1,0 +1,13 @@
+{
+    "name": "elipse/interarea_matematica",
+    "description": "interarea_matematica",
+    "type": "project",
+    "authors": [
+        {
+            "name": "AnaClaraPMarques"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.7"
+    }
+}
