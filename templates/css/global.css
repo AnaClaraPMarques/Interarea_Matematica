@@ -55,6 +55,21 @@ h2 {
     padding: 20px;
 }
 
+.matriz-determinante {
+    display: grid;
+
+    grid-template-columns: repeat(3, 55px);
+
+    grid-template-rows: repeat(3, 45px);
+
+    gap: 6px;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 25px auto;
+}
+
 input {
     width: 50px;
     height: 35px;
