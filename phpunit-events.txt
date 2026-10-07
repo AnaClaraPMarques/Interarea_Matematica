@@ -1,0 +1,67 @@
+PHPUnit Started (PHPUnit 13.4.1 using PHP 8.4.25 (cli) on WINNT)
+Test Runner Configured
+Bootstrap Finished (C:\Users\Anderson\Desktop\Interarea_Matematica\vendor/autoload.php)
+Event Facade Sealed
+Test Suite Loaded (5 tests)
+Test Runner Started
+Test Suite Sorted
+Test Runner Execution Started (5 tests)
+Test Suite Started (C:\Users\Anderson\Desktop\Interarea_Matematica\phpunit.xml, 5 tests)
+Test Suite Started (Álgebra Linear, 5 tests)
+Test Suite Started (AlgebraLinearTest, 5 tests)
+Test Preparation Started (AlgebraLinearTest::testSoma)
+Mock Object Created (Model\AlgebraLinearModel)
+Before Test Method Called (AlgebraLinearTest::setUp)
+Before Test Method Finished:
+- AlgebraLinearTest::setUp
+Test Prepared (AlgebraLinearTest::testSoma)
+Test Triggered PHPUnit Notice (AlgebraLinearTest::testSoma)
+No expectations were configured for the mock object for Model\AlgebraLinearModel. Consider refactoring your test code to use a test stub instead. The #[AllowMockObjectsWithoutExpectations] attribute can be used to opt out of this check.
+Test Passed (AlgebraLinearTest::testSoma)
+Test Finished (AlgebraLinearTest::testSoma)
+Test Preparation Started (AlgebraLinearTest::testSubtracao)
+Mock Object Created (Model\AlgebraLinearModel)
+Before Test Method Called (AlgebraLinearTest::setUp)
+Before Test Method Finished:
+- AlgebraLinearTest::setUp
+Test Prepared (AlgebraLinearTest::testSubtracao)
+Test Triggered PHPUnit Notice (AlgebraLinearTest::testSubtracao)
+No expectations were configured for the mock object for Model\AlgebraLinearModel. Consider refactoring your test code to use a test stub instead. The #[AllowMockObjectsWithoutExpectations] attribute can be used to opt out of this check.
+Test Passed (AlgebraLinearTest::testSubtracao)
+Test Finished (AlgebraLinearTest::testSubtracao)
+Test Preparation Started (AlgebraLinearTest::testMultiplicacao)
+Mock Object Created (Model\AlgebraLinearModel)
+Before Test Method Called (AlgebraLinearTest::setUp)
+Before Test Method Finished:
+- AlgebraLinearTest::setUp
+Test Prepared (AlgebraLinearTest::testMultiplicacao)
+Test Triggered PHPUnit Notice (AlgebraLinearTest::testMultiplicacao)
+No expectations were configured for the mock object for Model\AlgebraLinearModel. Consider refactoring your test code to use a test stub instead. The #[AllowMockObjectsWithoutExpectations] attribute can be used to opt out of this check.
+Test Passed (AlgebraLinearTest::testMultiplicacao)
+Test Finished (AlgebraLinearTest::testMultiplicacao)
+Test Preparation Started (AlgebraLinearTest::testDeterminante)
+Mock Object Created (Model\AlgebraLinearModel)
+Before Test Method Called (AlgebraLinearTest::setUp)
+Before Test Method Finished:
+- AlgebraLinearTest::setUp
+Test Prepared (AlgebraLinearTest::testDeterminante)
+Test Triggered PHPUnit Notice (AlgebraLinearTest::testDeterminante)
+No expectations were configured for the mock object for Model\AlgebraLinearModel. Consider refactoring your test code to use a test stub instead. The #[AllowMockObjectsWithoutExpectations] attribute can be used to opt out of this check.
+Test Passed (AlgebraLinearTest::testDeterminante)
+Test Finished (AlgebraLinearTest::testDeterminante)
+Test Preparation Started (AlgebraLinearTest::testSistemaLinear)
+Mock Object Created (Model\AlgebraLinearModel)
+Before Test Method Called (AlgebraLinearTest::setUp)
+Before Test Method Finished:
+- AlgebraLinearTest::setUp
+Test Prepared (AlgebraLinearTest::testSistemaLinear)
+Test Triggered PHPUnit Notice (AlgebraLinearTest::testSistemaLinear)
+No expectations were configured for the mock object for Model\AlgebraLinearModel. Consider refactoring your test code to use a test stub instead. The #[AllowMockObjectsWithoutExpectations] attribute can be used to opt out of this check.
+Test Passed (AlgebraLinearTest::testSistemaLinear)
+Test Finished (AlgebraLinearTest::testSistemaLinear)
+Test Suite Finished (AlgebraLinearTest, 5 tests)
+Test Suite Finished (Álgebra Linear, 5 tests)
+Test Suite Finished (C:\Users\Anderson\Desktop\Interarea_Matematica\phpunit.xml, 5 tests)
+Test Runner Execution Finished
+Test Runner Finished
+PHPUnit Finished (Shell Exit Code: 0)
